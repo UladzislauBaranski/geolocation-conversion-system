@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/mvc">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Geolocation</title>
+</head>
+<body>
+
+<form id="geolocation">
+    <label for="geolocation_input">Location</label>
+    <input id="geolocation_input" class="form-control" name="parameter" type="text"
+        placeholder="location"><br>
+
+    <div class="btn">
+        <input id="submit_zone_btn_add" type="submit"/>
+    </div>
+</form>
+
+<p id="coordinate_text"></p>
+<p id="address_text"></p>
+</body>
+<script src="../static/geolacation.js" th:src="@{geolacation.js}"></script>
+</html>
